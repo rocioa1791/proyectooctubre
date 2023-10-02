@@ -1,0 +1,2 @@
+# proyectooctubre
+repositorio para practicar
