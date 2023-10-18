@@ -26,52 +26,51 @@ if (document.title == "Personajes") {
 
   const cardContainer = document.querySelector("#cardContainerCharacters");
 
-async function fetchData(){
-  try {
-    fetch(urlCharacters)
-    .then((res) => {
-      const response = res.json();
-      return response;
-    })
-    .then((data) => {
-      characters.data = data;
-      createCard(characters);
-    })
-    .catch((err) => console.log(err));
-  } catch (error) {
-    
+  async function fetchData() {
+    try {
+      fetch(urlCharacters)
+        .then((res) => {
+          const response = res.json();
+          return response;
+        })
+        .then((data) => {
+          characters.data = data;
+          createCard(characters);
+        })
+        .catch((err) => console.log(err));
+    } catch (error) {}
   }
-}
-  
 
   async function createCard(array) {
-    const {data} = array
+    const { data } = array;
     try {
-      !data ? (cardContainer.innerHTML="<p>Cargando personajes</p>"):(
-        data.map((item) => {
-          const div = document.createElement("div");
-          div.className = "borderColor";
-          div.innerHTML = `
-        <div class="cardCharacters">
-          <figure>
-            <img src=${item.images.main} alt="">
-          </figure>
-          <h3>${item.name.first}, ${item.name.last}</h3>
-          <div class="bodyCharacters">
-            <p>Genero: <span>${item.gender}</span></p>
-            <p>Especie: <span>${item.species}</span></p>
-            <p>Planeta: <span>${item.homePlanet}</span></p>
-            <p>Ocupacion: <span>${item.occupation}</span></p>
-          </div>
+      data.map((item) => {
+        const div = document.createElement("div");
+        div.className = "borderColor";
+        div.innerHTML = `
+      <div class="cardCharacters">
+        <figure>
+          <img src=${item.images.main} alt="">
+        </figure>
+        <h3>${item.name.first}, ${item.name.last}</h3>
+        <div class="bodyCharacters">
+          <p>Genero: <span>${item.gender}</span></p>
+          <p>Especie: <span>${item.species}</span></p>
+          <p>Planeta: <span>${item.homePlanet}</span></p>
+          <p>Ocupacion: <span>${item.occupation}</span></p>
         </div>
-        `;
-          cardContainer.appendChild(div)
-        })
-      )
+      </div>
+      `;
+        cardContainer.appendChild(div);
+      }),
+        ScrollReveal().reveal(".borderColor", {
+          delay: 500,
+          opacity: 0,
+        });
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 
-  fetchData()
+  fetchData();
 }

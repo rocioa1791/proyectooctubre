@@ -4,6 +4,10 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+main {
+  width: 100%;
+  height: 100%;
+}
 .containerCharacters {
   width: 100%;
   height: 100%;
@@ -14,8 +18,11 @@
   background-color: #252525;
   color: #fff;
 }
-.containerCharacters h2,
+.containerCharacters h2{
+  font-size: 2rem;
+}
 .containerCharacters h4 {
+  font-size: 1.3rem;
   padding: 1rem 0;
 }
 .cardContainerCharacters {
@@ -27,9 +34,12 @@
   gap: 12px;
   place-items: center;
 }
+.cardCharacters h3 {
+  font-size: 1.2rem;
+}
 .cardCharacters img {
   width: 280px;
-  height: 280px;
+  height: 260px;
   object-fit: contain;
   border-radius: 5px;
 }
@@ -37,7 +47,7 @@
   border-radius: 0 10px 0 10px;
   padding: 2px;
   width: 300px;
-  height: 480px;
+  height: 500px;
   background-image: linear-gradient(to right, #6830c3ea, #64dfdfe5);
 }
 .cardCharacters {
@@ -55,7 +65,7 @@
   filter: drop-shadow(0 0 2px #64dfdfe5);
 }
 .bodyCharacters {
-  height: 45%;
+  height: 50%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -64,9 +74,57 @@
 }
 .bodyCharacters p {
   font-weight: 700;
- 
+  font-size: 1rem;
 }
 .bodyCharacters span {
   font-weight: normal;
   font-size: 0.9rem;
+}
+/*endRegion*/
+/*BS*/
+.navbar {
+  background-color:#252525 ; /* Cambia el color de fondo */
+  /* background-image: url('ruta/a/imagen.png'); */ /* O utiliza una imagen de fondo */
+}
+.navbar-brand img {
+  width: 100px; /* Ajusta el ancho según tus preferencias */
+  margin-right: 300px; /* Agrega margen a la derecha del logotipo */
+  margin-left: 50px;
+  filter: grayscale(0%); /* Puedes aplicar efectos, como desaturación */
+}
+
+/* Cambia el color del logotipo en el hover */
+.navbar-brand img:hover {
+  filter:grayscale(50%)
+  
+}
+.navbar-nav .nav-link {
+  color:#252525; /* Cambia el color de los enlaces de navegación */
+  font-size: 16px; /* Ajusta el tamaño de fuente */
+  margin: 0 10px; /* Agrega margen horizontal entre los enlaces */
+}
+
+/* Cambia el color de los enlaces en el hover */
+.navbar-nav .nav-link:hover {
+  color:#6930C3; /* Cambia el color al pasar el mouse */
+}
+/* Cambia el color del texto de los enlaces de navegación en la barra de navegación */
+.navbar-nav .nav-link {
+  color: #fff; /* Cambia el color del texto a blanco o cualquier otro color legible */
+}
+
+@keyframes animated-flashing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated-flashing {
+  animation: animated-flashing 1s linear infinite;
 }
