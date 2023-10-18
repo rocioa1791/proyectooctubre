@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.containerCharacters {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #252525;
+  color: #fff;
+}
+.containerCharacters h2,
+.containerCharacters h4 {
+  padding: 1rem 0;
+}
+.cardContainerCharacters {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.cardCharacters img {
+  width: 280px;
+  height: 280px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+.borderColor {
+  border-radius: 0 10px 0 10px;
+  padding: 2px;
+  width: 300px;
+  height: 480px;
+  background-image: linear-gradient(to right, #6830c3ea, #64dfdfe5);
+}
+.cardCharacters {
+  border-radius: 0 10px 0 10px;
+  background-color: #252525ce;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+.cardCharacters h3 {
+  filter: drop-shadow(0 0 2px #64dfdfe5);
+}
+.bodyCharacters {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 1px solid #fff;
+}
+.bodyCharacters p {
+  font-weight: 700;
+ 
+}
+.bodyCharacters span {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
