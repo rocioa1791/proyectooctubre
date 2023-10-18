@@ -34,4 +34,20 @@
 .navbar-nav .nav-link {
     color: #fff; /* Cambia el color del texto a blanco o cualquier otro color legible */
 }
-/* Aplica un margen a la derecha del logotipo para separarlo de los enlaces */
+
+@keyframes animated-flashing {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animated-flashing {
+    animation: animated-flashing 1s linear infinite;
+  }
+  
