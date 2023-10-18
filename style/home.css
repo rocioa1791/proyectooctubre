@@ -150,13 +150,18 @@ main {
   box-shadow: 0 0 10px #64dfdf;
   transition: all 0.2s ease-in-out;
 }
+main {
+  padding-top: 200px; /* Ajusta la altura según la altura de tu barra de navegación fija */
+}
+
 /*#endRegion*/
 .navbar {
-  background-color:#252525 ; /* Cambia el color de fondo */
+  background-color:#64DFDF; /* Cambia el color de fondo */
   /* background-image: url('ruta/a/imagen.png'); */ /* O utiliza una imagen de fondo */
 }
+/* Ajusta el tamaño del logotipo */
 .navbar-brand img {
-  width: 100px; /* Ajusta el ancho según tus preferencias */
+  width: 130px; /* Ajusta el ancho según tus preferencias */
   margin-right: 300px; /* Agrega margen a la derecha del logotipo */
   margin-left: 50px;
   filter: grayscale(0%); /* Puedes aplicar efectos, como desaturación */
