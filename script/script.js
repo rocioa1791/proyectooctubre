@@ -47,25 +47,27 @@ async function fetchData(){
   async function createCard(array) {
     const {data} = array
     try {
-      data.map((item) => {
-        const div = document.createElement("div");
-        div.className = "borderColor";
-        div.innerHTML = `
-      <div class="cardCharacters">
-        <figure>
-          <img src=${item.images.main} alt="">
-        </figure>
-        <h3>${item.name.first}</h3>
-        <div class="bodyCharacters">
-          <p>Genero: <span>genero</span></p>
-          <p>Especie: <span>especie</span></p>
-          <p>Planeta: <span>Planeta de origen</span></p>
-          <p>Ocupacion: <span>Ocupacion</span></p>
+      !data ? (cardContainer.innerHTML="<p>Cargando personajes</p>"):(
+        data.map((item) => {
+          const div = document.createElement("div");
+          div.className = "borderColor";
+          div.innerHTML = `
+        <div class="cardCharacters">
+          <figure>
+            <img src=${item.images.main} alt="">
+          </figure>
+          <h3>${item.name.first}, ${item.name.last}</h3>
+          <div class="bodyCharacters">
+            <p>Genero: <span>${item.gender}</span></p>
+            <p>Especie: <span>${item.species}</span></p>
+            <p>Planeta: <span>${item.homePlanet}</span></p>
+            <p>Ocupacion: <span>${item.occupation}</span></p>
+          </div>
         </div>
-      </div>
-      `;
-        cardContainer.appendChild(div)
-      });
+        `;
+          cardContainer.appendChild(div)
+        })
+      )
     } catch (error) {
       console.log(error)
     }

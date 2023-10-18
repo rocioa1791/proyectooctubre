@@ -25,6 +25,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  place-items: center;
 }
 .cardCharacters img {
   width: 280px;
