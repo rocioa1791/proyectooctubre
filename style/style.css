@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    background-color:#252525 ; /* Cambia el color de fondo */
+    /* background-image: url('ruta/a/imagen.png'); */ /* O utiliza una imagen de fondo */
+}
+.navbar-brand img {
+    width: 100px; /* Ajusta el ancho según tus preferencias */
+    margin-right: 300px; /* Agrega margen a la derecha del logotipo */
+    margin-left: 50px;
+    filter: grayscale(0%); /* Puedes aplicar efectos, como desaturación */
+}
+
+/* Cambia el color del logotipo en el hover */
+.navbar-brand img:hover {
+    filter:grayscale(50%)
+    
+}
+.navbar-nav .nav-link {
+    color:#252525; /* Cambia el color de los enlaces de navegación */
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    margin: 0 10px; /* Agrega margen horizontal entre los enlaces */
+}
+
+/* Cambia el color de los enlaces en el hover */
+.navbar-nav .nav-link:hover {
+    color:#6930C3; /* Cambia el color al pasar el mouse */
+}
+/* Cambia el color del texto de los enlaces de navegación en la barra de navegación */
+.navbar-nav .nav-link {
+    color: #fff; /* Cambia el color del texto a blanco o cualquier otro color legible */
+}
+
+@keyframes animated-flashing {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animated-flashing {
+    animation: animated-flashing 1s linear infinite;
+  }
+  
