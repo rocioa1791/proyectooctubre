@@ -23,7 +23,7 @@ if (document.title == "Home") {
 if (document.title == "Personajes") {
   const urlCharacters = "https://api.sampleapis.com/futurama/characters";
   const characters = {};
-
+  
   const cardContainer = document.querySelector("#cardContainerCharacters");
 
   async function fetchData() {
@@ -74,3 +74,7 @@ if (document.title == "Personajes") {
 
   fetchData();
 }
+
+// async function orderCharacter {
+
+// }
