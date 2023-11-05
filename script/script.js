@@ -23,8 +23,17 @@ if (document.title == "Home") {
 if (document.title == "Personajes") {
   const urlCharacters = "https://api.sampleapis.com/futurama/characters";
   const characters = {};
-  
+
   const cardContainer = document.querySelector("#cardContainerCharacters");
+
+  const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2000,
+    delay: 300,
+  })
+
+  sr.reveal('#titleCharacter', {origin: "left"})
 
   async function fetchData() {
     try {
@@ -64,7 +73,11 @@ if (document.title == "Personajes") {
         cardContainer.appendChild(div);
       }),
         ScrollReveal().reveal(".borderColor", {
-          delay: 500,
+          origin:"top",
+          distance: "60px",
+          duration: 2000,
+          interval: 100,
+          delay: 400,
           opacity: 0,
         });
     } catch (error) {

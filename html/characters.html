@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personajes</title>
     <link rel="stylesheet" href="/style/characters.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,55 +20,103 @@
     />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
-  <body>
+  <body class="body">
     <header>
-      <nav class="navbar navbar-expand-lg  body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="/html/home.html"><img src="/resourse/Black_And_White_Globe_Y2k_Streetwear_Logo-removebg-preview.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="/html/home.html"><i class="fas fa-home animated-flashing" style="font-size: 24px; color: #6930C3;"></i>
-                      Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#" ><i class="fa fa-user animated-flashing" style="font-size: 24px; color: #6930C3;"></i> Personajes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page"  href="#"><i class="fa fa-question animated-flashing" style="font-size: 24px; color:#6930C3;"></i>
-                      Trivia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"><i class="fa fa-users animated-flashing"style="font-size: 24px; color:#6930C3;" ></i>
-                      Elenco</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"><i class="fa fa-info animated-flasing" style="font-size: 24px; color:#6930C3"></i>
-                      Acerca de nosotros</a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/html/home.html"
+            ><img
+              src="/resourse/Black_And_White_Globe_Y2k_Streetwear_Logo-removebg-preview.png"
+              alt="Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/html/home.html"
+                  ><i
+                    class="fas fa-home animated-flashing"
+                    style="font-size: 24px; color: #6930c3"
+                  ></i>
+                  Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i
+                    class="fa fa-user animated-flashing"
+                    style="font-size: 24px; color: #6930c3"
+                  ></i>
+                  Personajes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i
+                    class="fa fa-question animated-flashing"
+                    style="font-size: 24px; color: #6930c3"
+                  ></i>
+                  Trivia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i
+                    class="fa fa-users animated-flashing"
+                    style="font-size: 24px; color: #6930c3"
+                  ></i>
+                  Elenco</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"
+                  ><i
+                    class="fa fa-info animated-flasing"
+                    style="font-size: 24px; color: #6930c3"
+                  ></i>
+                  Acerca de nosotros</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav> 
-  </header>
-   <main>
-    <section class="containerCharacters">
-      <h2>Sección de Personajes</h2>
-      <h4>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-        officia dolore laborum at, vitae similique fugiat reiciendis pariatur
-        est, cum minus illo eius porro rem a magnam et atque recusandae!
-      </h4>
-      <div class="cardContainerCharacters" id="cardContainerCharacters"></div>
-    </section>
-   </main>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="sectionCharacters seccion">
+        <div class="charactersContainer grid contenedor">
+          <h2 id="titleCharacter">Sección de Personajes</h2>
+          <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            officia dolore laborum at, vitae similique fugiat reiciendis
+            pariatur est, cum minus illo eius porro rem a magnam et atque
+            recusandae!
+          </h4>
+          <div
+            class="cardContainerCharacters"
+            id="cardContainerCharacters"
+          ></div>
+        </div>
+      </section>
+    </main>
     <script src="/script/script.js"></script>
     <!--ScrollReveal-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
